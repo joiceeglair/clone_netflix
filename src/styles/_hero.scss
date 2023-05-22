@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+.hero {
+    padding: 0;
+    margin: 0;
+
+    &__content {
+        &__image {
+            max-width: 100%;
+            width: 100%;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        &__branding {
+            position: relative;
+            color: variaveis.$corTexto;
+            padding-left: 35px;
+            padding-top: 610px;
+        }
+    }
+}

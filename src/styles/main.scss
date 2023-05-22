@@ -1,5 +1,72 @@
-$bgColor: yellow;
+@use 'hero';
+@use 'variaveis';
+@use 'watch';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 35px) {
+    font-size: $fontSize;
+    font-weight: 400;
+    color: variaveis.$corTexto;
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(25px);
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.link-text {
+    @include text(1rem);
+    color: rgba(255, 255, 255, 0.7);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTexto;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+
+    &:hover {
+        background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+    }
+
+    &--secondary {
+        background-color: variaveis.$corDeFundoBotaoSecundario;
+        border-color: variaveis.$corDeFundoBotaoSecundario;
+
+        &:hover {
+            background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
+        }
+    }
 }

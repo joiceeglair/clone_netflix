@@ -1,0 +1,25 @@
+.watch {
+    padding: 2vw 5.6vw;
+    margin-top: 350px;
+    
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        
+        &__item {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            h3 {
+                font-weight: bolder;
+                padding: 20px 0;
+            }
+        }
+    }
+}

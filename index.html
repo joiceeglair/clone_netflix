@@ -8,6 +8,152 @@
     <title>Clone Netflix</title>
 </head>
 <body>
-    <h1>Ola</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/img/netflix.webp" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secondary" href="#">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <img class="hero__content__image" src="./src/img/hero2.jpg" alt="hero">
+            <h1 class="hero__content__branding title">Filmes, séries e muito mais, sem limites</h1>
+        </div>
+    </section>
+    <section class="watch">
+        <ul class="watch__list">
+            <li class="watch__list__item">
+                <img src="./src/img/filmes.jpg" alt="filmes">
+                <h3 class="text">Aproveite na TV</h3>
+                <p class="text--small">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </li>
+            <li class="watch__list__item">
+                <img src="./src/img/series.jpg" alt="series">
+                <h3 class="text">Assista onde quiser</h3>
+                <p class="text--small">Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+            </li>
+            <li class="watch__list__item">
+                <img src="./src/img/infantis.jpg" alt="infantis">
+                <h3 class="text">Crie perfis para crianças</h3>
+                <p class="text--small">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que é a Netflix?
+                </div>
+                <div class="faq__questions__item__answer text--small">
+                    <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+
+                        Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+        </ul>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+                Quanto custa a Netflix?
+            </div>
+            <div class="faq__questions__item__answer text--small">
+                <p>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$18,90 a R$55,90 por mês. Sem contrato nem taxas extras.</p>
+            </div>
+        </li>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+                O que eu posso assistir na Netflix?
+            </div>
+            <div class="faq__questions__item__answer text--small">
+                A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+            </div>
+        </li>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question> 
+                Onde posso assistir?
+            </div>
+            <div class="faq__questions__item__answer text--small">
+                <p>
+                    Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.<br><br>
+                    Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.
+                </p>
+            </div>
+        </li>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question> 
+                Como faço para cancelar?
+            </div>
+            <div class="faq__questions__item__answer text--small">
+                <p>
+                    A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                </p>
+            </div>
+        </li>
+        <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question> 
+                A Netflix é adequada para crianças?
+            </div>
+            <div class="faq__questions__item__answer text--small">
+                <p>
+                    A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.<br><br>
+                    O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.
+                </p>
+            </div>
+        </li>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./src/img/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Perguntas frequentes</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Entre em contato</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de Privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre a Netflix</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
